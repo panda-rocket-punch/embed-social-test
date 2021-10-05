@@ -1,3 +1,10 @@
+#noodle-social-chat {
+    width: 325px;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
 .App {
   text-align: center;
   width: 325px;

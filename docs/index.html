@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <meta charset="utf-8">
+<!--    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+<!--    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />-->
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+<!--    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />-->
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -28,7 +25,7 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-<!--    <div id="noodle-social-chat"></div>-->
+    <div id="noodle-social-chat"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,38 +36,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="/public.e31bb0bc.js"></script>
   </body>
-  <script>
-    window.addEventListener( 'load', (event) => {
-      const iDiv = document.createElement('div');
-      iDiv.id = 'noodle-social-chat';
-      document.body.appendChild(iDiv);
-
-      document.head.innerHTML += '<link href="https://panda-rocket-punch.github.io/embed-social-test/docs/index.css" rel="stylesheet" />';
-      const script = document.createElement('script');
-      script.src = "https://panda-rocket-punch.github.io/embed-social-test/docs/index.js";
-      document.head.appendChild(script);
-      // document.head.innerHTML += '<script src="https://panda-rocket-punch.github.io/embed-social-test/docs/index.js" />';
-    //   function loadScript(url, completeCallback) {
-    //     let script = document.createElement('script'), done = false,
-    //       head = document.head;
-    //     script.src = url;
-    //     script.onload = script.onreadystatechange = function(){
-    //       if ( !done && (!this.readyState ||
-    //         this.readyState == "loaded" || this.readyState == "complete") ) {
-    //         done = true;
-    //         completeCallback();
-    //
-    //         // IE memory leak
-    //         // script.onload = script.onreadystatechange = null;
-    //         // head.removeChild( script );
-    //       }
-    //     };
-    //     head.appendChild(script);
-    //   }
-    //
-    //   loadScript("https://panda-rocket-punch.github.io/embed-social-test/docs/index.js",
-    //     function () { console.log('jQuery has been loaded.'); });
-    });
-  </script>
 </html>
