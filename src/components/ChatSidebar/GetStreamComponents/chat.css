@@ -1,0 +1,15 @@
+.str-chat.messaging, .str-chat.commerce {
+    background-color: #F8F8F8;
+    padding: 15px;
+    max-height: 80%;
+}
+
+.str-chat-channel.messaging .str-chat__main-panel {
+    padding: 0;
+}
+
+.messaging.str-chat .str-chat__header-livestream {
+    background-color: #F8F8F8;
+    box-shadow: 0 1px 6px #00000029;
+    border-radius: 0;
+}
