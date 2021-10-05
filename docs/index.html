@@ -47,7 +47,27 @@
       document.body.appendChild(iDiv);
 
       document.head.innerHTML += '<link href="https://panda-rocket-punch.github.io/embed-social-test/docs/index.css" rel="stylesheet" />';
-      document.head.innerHTML += '<script src="https://panda-rocket-punch.github.io/embed-social-test/docs/index.js" />';
+      // document.head.innerHTML += '<script src="https://panda-rocket-punch.github.io/embed-social-test/docs/index.js" />';
+      function loadScript(url, completeCallback) {
+        let script = document.createElement('script'), done = false,
+          head = document.getElementsByTagName("head")[0];
+        script.src = url;
+        script.onload = script.onreadystatechange = function(){
+          if ( !done && (!this.readyState ||
+            this.readyState == "loaded" || this.readyState == "complete") ) {
+            done = true;
+            completeCallback();
+
+            // IE memory leak
+            script.onload = script.onreadystatechange = null;
+            head.removeChild( script );
+          }
+        };
+        head.appendChild(script);
+      }
+
+      loadScript("https://panda-rocket-punch.github.io/embed-social-test/docs/index.js",
+        function () { console.log('jQuery has been loaded.'); });
     });
   </script>
 </html>
